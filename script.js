@@ -1,11 +1,6 @@
-function showSection(id) {
-  const sections = document.querySelectorAll('.section');
-  sections.forEach(sec => {
-    sec.classList.remove('visible');
+function showSection(sectionId) {
+  document.querySelectorAll('.section').forEach((section) => {
+    section.classList.remove('visible');
   });
-  const target = document.getElementById(id);
-  if (target) {
-    target.classList.add('visible');
-  }
+  document.getElementById(sectionId).classList.add('visible');
 }
-document.addEventListener('DOMContentLoaded', () => showSection('home'));
