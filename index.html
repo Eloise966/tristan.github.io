@@ -7,20 +7,21 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <a href="#about">About Me</a>
-    <a href="#projects">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <main class="container">
-    <section class="header">
-      <h1>Tristan</h1>
-      <p>Corrosion Engineer | PhD Applicant | Researcher in Materials Science</p>
-    </section>
+  <div class="header">
+    <h1>Tristan</h1>
+    <p>Corrosion Engineer | PhD Applicant</p>
+  </div>
 
-    <section id="about">
+  <nav class="nav-buttons">
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('projects')">Research</button>
+    <button onclick="showSection('publications')">Publications</button>
+    <button onclick="showSection('skills')">Skills</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <div class="content">
+    <section id="about" class="hidden">
       <h2>About Me</h2>
       <p>
         I am a corrosion engineer with a background in materials science and electrochemistry.
@@ -29,7 +30,7 @@
       </p>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="hidden">
       <h2>Research Projects</h2>
       <div class="card">
         <h3>Eco-friendly Inhibitors for Carbon Steel</h3>
@@ -40,12 +41,12 @@
       </div>
     </section>
 
-    <section id="publications">
+    <section id="publications" class="hidden">
       <h2>Publications</h2>
       <p>No publications uploaded yet. This section can include your papers or reports.</p>
     </section>
 
-    <section id="skills">
+    <section id="skills" class="hidden">
       <h2>Skills</h2>
       <ul>
         <li>Electrochemical Techniques (EIS, Tafel, LPR)</li>
@@ -55,11 +56,19 @@
       </ul>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="hidden">
       <h2>Contact</h2>
       <p>Email: tristan@email.com</p>
       <p>GitHub: github.com/tristan-corrosion</p>
     </section>
-  </main>
+  </div>
+
+  <script>
+    function showSection(id) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(s => s.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
