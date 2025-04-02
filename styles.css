@@ -3,11 +3,30 @@ body {
   background-color: #ffffff;
   color: #333333;
   margin: 0;
-  padding: 20px;
+  scroll-behavior: smooth;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #f8f8f8;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.navbar a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+.navbar a:hover {
+  text-decoration: underline;
 }
 .container {
   max-width: 800px;
   margin: auto;
+  padding: 20px;
 }
 .header {
   text-align: center;
