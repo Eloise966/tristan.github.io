@@ -17,17 +17,15 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.avatar-container {
-  margin-bottom: 15px;
-}
 .avatar {
-  width: 100px;
-  height: 100px;
+  width: 96px;
+  height: 96px;
   border-radius: 9999px;
   border: 2px solid white;
+  margin-bottom: 10px;
 }
 .name {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -37,8 +35,8 @@ body {
   margin-bottom: 20px;
 }
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
 }
 .sidebar nav {
   display: flex;
