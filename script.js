@@ -1,4 +1,11 @@
 function showSection(id) {
-  document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
-  document.getElementById(id).classList.add('visible');
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(sec => {
+    sec.classList.remove('visible');
+  });
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.add('visible');
+  }
 }
+document.addEventListener('DOMContentLoaded', () => showSection('home'));
