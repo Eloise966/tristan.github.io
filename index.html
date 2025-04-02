@@ -3,66 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tristan Pon - PhD Portfolio</title>
-  <link href="styles.css" rel="stylesheet">
-  <script defer src="script.js"></script>
+  <title>Tristan Pon</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <main class="container">
+  <div class="container">
     <aside class="sidebar">
-      <div class="overlay">
-        <div class="top-section">
-          <a href="avatar.jpg" target="_blank">
-            <img src="avatar.jpg" alt="Tristan Pon" class="avatar" />
-          </a>
-          <h1 class="name">Tristan Pon</h1>
-          <div class="icons">
-            <a href="https://www.linkedin.com/in/tristan-pon/" target="_blank">
-              <img src="linkedin.png" alt="LinkedIn" class="icon" />
-            </a>
-            <a href="mailto:tpschool2854@gmail.com">
-              <img src="email.png" alt="Email" class="icon" />
-            </a>
-          </div>
-        </div>
-        <nav class="nav-menu">
-          <button onclick="showSection('home')">Home</button>
-          <button onclick="showSection('about')">About</button>
-          <button onclick="showSection('projects')">Projects</button>
-          <button onclick="showSection('contact')">Contact</button>
-        </nav>
+      <img src="avatar.jpg" alt="Tristan Pon" class="avatar" />
+      <h1 class="name">Tristan Pon</h1>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/tristan-pon/" target="_blank"><img src="linkedin.png" alt="LinkedIn" /></a>
+        <a href="mailto:tpschool2854@gmail.com"><img src="email.png" alt="Email" /></a>
       </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </aside>
-    <section class="content">
-      <div id="home" class="section visible">
+    <main class="content">
+      <section id="home">
         <h2>Featured Articles</h2>
         <p>Explore a featured selection of my writing work below.</p>
-      </div>
-      <div id="about" class="section">
+        <div class="article">
+          <h3>Green Corrosion Inhibitors for Steel</h3>
+          <p>Tested eco-friendly corrosion inhibitors using EIS and SEM on carbon steel in HCl. Achieved up to 85% efficiency.</p>
+        </div>
+      </section>
+      <section id="about">
         <h2>About Me</h2>
-        <p>I am an ambitious mechanical engineering graduate with expertise in corrosion engineering, eager to learn and seize every possible opportunity.
-        My passion for finding unusual ways to optimise solutions and automation naturally led me to mechanical engineering. Following in my father’s footsteps,
-        I’ve always been fascinated by computers, software and how systems are designed to work smarter, not harder.
-        Mechanical engineering is where I am able to blend my love for technology, programming, and automotive systems.</p>
-        
-        <p>I was born in South Africa and travelled a long way to Australia to pursue my studies at RMIT in Bachelors of Engineering (Mechanical) (Hons).
-        I studied for 4 years and took part in many extra-curricular activities. One of the major achievements is being a founding member of RMIT Engineers Australia Student Society (REASS)
-        and being the student ambassador for Engineers Australia at RMIT. I completed my studies at the end of 2023 with my thesis focused on 
-        "Modern Multi-story buildings have to be built of highest possible energy efficiency" and obtained a First Class Honours.</p>
-
-        <p>Nowadays, you can find me working with Cathodic Protection Designs as a Corrosion Engineer at Corrosion Control Engineering (a member of the Eptec Group)
-        where I can support major pipe works that run throughout Australia and allow the homes of Australia to have the basic needs and wants.</p>
-      </div>
-      <div id="projects" class="section">
+        <p>I am an ambitious mechanical engineering graduate with expertise in corrosion engineering, eager to learn and seize every possible opportunity. My passion for finding unusual ways to optimise solutions and automation naturally led me to mechanical engineering. Following in my father’s footsteps, I’ve always been fascinated by computers, software, and how systems are designed to work smarter, not harder. Mechanical engineering is where I am able to blend my love for technology, programming, and automotive systems.</p>
+        <p>I was born in South Africa and travelled a long way to Australia to pursue my studies at RMIT in Bachelors of Engineering (Mechanical) (Hons). I studied for 4 years and took part in many extra-curricular activities. One of my major achievements is being a founding member of RMIT Engineers Australia Student Society (REASS) and serving as the student ambassador for Engineers Australia at RMIT. I completed my studies at the end of 2023 with my thesis focused on <em>"Modern Multi-story buildings have to be built of highest possible energy efficiency,"</em> obtaining a First Class Honours.</p>
+        <p>Nowadays, you can find me working with Cathodic Protection Designs as a Corrosion Engineer at Corrosion Control Engineering (a member of the Eptec Group), supporting major pipeline projects across Australia and ensuring homes have their essential utilities.</p>
+      </section>
+      <section id="projects">
         <h2>Research Projects</h2>
-        <p>Content about your projects can be placed here.</p>
-      </div>
-      <div id="contact" class="section">
+        <p>Developed and tested novel green inhibitors to reduce corrosion rates in acidic environments. Employed electrochemical impedance spectroscopy (EIS) and surface analysis (SEM/EDS).</p>
+      </section>
+      <section id="contact">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:tpschool2854@gmail.com">tpschool2854@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/tristan-pon/" target="_blank">tristan-pon</a></p>
-      </div>
-    </section>
-  </main>
+        <p><strong>Email:</strong> <a href="mailto:tpschool2854@gmail.com">tpschool2854@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tristan-pon/" target="_blank">linkedin.com/in/tristan-pon</a></p>
+        <div class="note">
+          <p>I'm always open to academic collaboration, research projects, or professional conversations. Feel free to connect with me or drop me a message directly. Let’s work together to build smarter, more sustainable systems.</p>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

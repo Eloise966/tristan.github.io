@@ -1,74 +1,66 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  overflow-y: scroll;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
 }
 .container {
   display: flex;
   min-height: 100vh;
 }
 .sidebar {
-  width: 250px;
-  min-width: 250px;
+  width: 260px;
   background: url('background.png') no-repeat center center;
   background-size: cover;
-}
-.overlay {
-  background-color: rgba(0, 0, 51, 0.8);
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  color: white;
   padding: 20px;
-}
-.top-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 .avatar {
-  width: 96px;
-  height: 96px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 2px solid white;
-  object-fit: cover;
-  margin-bottom: 10px;
 }
 .name {
-  color: white;
+  margin-top: 10px;
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 10px;
 }
-.icons {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.icon {
-  width: 20px;
-  height: 20px;
-  padding: 2px;
-  background-color: white;
+.icons img {
+  width: 24px;
+  margin: 10px 5px;
+  background: white;
+  padding: 4px;
   border-radius: 50%;
 }
-.nav-menu {
-  margin-top: auto;
+.nav {
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.nav-menu button {
-  background: none;
+.nav a {
   color: white;
-  border: none;
-  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
 }
 .content {
   flex-grow: 1;
   padding: 40px;
+  background: #fff;
 }
-.section {
-  display: none;
+section {
+  margin-bottom: 60px;
 }
-.section.visible {
-  display: block;
+.article {
+  background: #eef5ff;
+  padding: 15px;
+  border-radius: 6px;
+}
+.note {
+  background: #dff0ff;
+  padding: 15px;
+  border-left: 4px solid #339;
+  margin-top: 20px;
+  border-radius: 4px;
 }
