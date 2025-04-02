@@ -3,24 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tristan - PhD Portfolio</title>
+  <title>Tristan Pon - PhD Portfolio</title>
   <link href="styles.css" rel="stylesheet">
   <script defer src="script.js"></script>
 </head>
 <body>
   <main class="container">
     <aside class="sidebar">
-      <h1>Tristan</h1>
+      <div class="avatar-container">
+        <img src="avatar.jpg" alt="Tristan Pon" class="avatar" />
+      </div>
+      <h1 class="name">Tristan Pon</h1>
+      <div class="icons">
+        <a href="#"><img src="linkedin.png" alt="LinkedIn" class="icon"></a>
+        <a href="#"><img src="email.png" alt="Email" class="icon"></a>
+      </div>
       <nav>
-        <button onclick="showSection('about')">About Me</button>
-        <button onclick="showSection('projects')">Research</button>
-        <button onclick="showSection('publications')">Publications</button>
-        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('projects')">Projects</button>
         <button onclick="showSection('contact')">Contact</button>
       </nav>
     </aside>
     <section class="content">
-      <div id="about" class="section">
+      <div id="home" class="section">
+        <h2>Featured Articles</h2>
+        <p>Explore a featured selection of my writing work below.</p>
+      </div>
+      <div id="about" class="section hidden">
         <h2>About Me</h2>
         <p>I am a corrosion engineer with a background in materials science and electrochemistry. My research
         focuses on corrosion behavior in harsh environments, especially within marine and oil & gas applications.
@@ -33,19 +43,6 @@
           <p>Developed and tested novel green inhibitors to reduce corrosion rates in acidic environments.
           Employed electrochemical impedance spectroscopy (EIS) and surface analysis (SEM/EDS).</p>
         </div>
-      </div>
-      <div id="publications" class="section hidden">
-        <h2>Publications</h2>
-        <p>No publications uploaded yet. This section can include your papers or reports.</p>
-      </div>
-      <div id="skills" class="section hidden">
-        <h2>Skills</h2>
-        <ul>
-          <li>Electrochemical Techniques (EIS, Tafel, LPR)</li>
-          <li>Materials Characterization (SEM, EDS, XRD)</li>
-          <li>Software: COMSOL, MATLAB, Origin</li>
-          <li>Languages: Python, LaTeX</li>
-        </ul>
       </div>
       <div id="contact" class="section hidden">
         <h2>Contact</h2>

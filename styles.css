@@ -7,16 +7,38 @@ body {
   min-height: 100vh;
 }
 .sidebar {
-  width: 220px;
-  background-color: #001f3f;
+  width: 250px;
+  background-image: url('background.png');
+  background-size: cover;
+  background-position: center;
   color: white;
   padding: 20px;
-  position: sticky;
-  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.sidebar h1 {
-  font-size: 1.5em;
+.avatar-container {
+  margin-bottom: 15px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+  border: 2px solid white;
+}
+.name {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.icons {
+  display: flex;
+  gap: 10px;
   margin-bottom: 20px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
 }
 .sidebar nav {
   display: flex;
@@ -29,6 +51,7 @@ body {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  font-size: 14px;
   text-align: left;
 }
 .sidebar button:hover {
@@ -36,12 +59,12 @@ body {
 }
 .content {
   flex-grow: 1;
-  padding: 30px;
+  padding: 40px;
   background-color: #f8f9fa;
 }
 .section {
   display: none;
-  animation: fadeIn 0.5s ease-in-out;
+  animation: fadeIn 0.4s ease-in-out;
 }
 .section.visible {
   display: block;
@@ -51,10 +74,6 @@ body {
   padding: 15px;
   border-radius: 8px;
   margin-top: 10px;
-}
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
 }
 @keyframes fadeIn {
   from { opacity: 0; }
