@@ -87,3 +87,22 @@ body {
   margin-bottom: 15px;
   text-align: justify;
 }
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 40px;
+  overflow-y: auto;
+}
