@@ -10,18 +10,20 @@
 <body>
   <main class="container">
     <aside class="sidebar">
-      <img src="avatar.jpg" alt="Tristan Pon" class="avatar" />
-      <h1 class="name">Tristan Pon</h1>
-      <div class="icons">
-        <a href="#" title="LinkedIn"><img src="linkedin.png" alt="LinkedIn" class="icon" /></a>
-        <a href="#" title="Email"><img src="email.png" alt="Email" class="icon" /></a>
+      <div class="overlay">
+        <img src="avatar.jpg" alt="Tristan Pon" class="avatar" />
+        <h1 class="name">Tristan Pon</h1>
+        <div class="icons">
+          <a href="#" title="LinkedIn"><img src="linkedin.png" alt="LinkedIn" class="icon" /></a>
+          <a href="#" title="Email"><img src="email.png" alt="Email" class="icon" /></a>
+        </div>
+        <nav>
+          <button onclick="showSection('home')">Home</button>
+          <button onclick="showSection('about')">About</button>
+          <button onclick="showSection('projects')">Projects</button>
+          <button onclick="showSection('contact')">Contact</button>
+        </nav>
       </div>
-      <nav>
-        <button onclick="showSection('home')">Home</button>
-        <button onclick="showSection('about')">About</button>
-        <button onclick="showSection('projects')">Projects</button>
-        <button onclick="showSection('contact')">Contact</button>
-      </nav>
     </aside>
     <section class="content">
       <div id="home" class="section">
