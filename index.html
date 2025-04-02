@@ -3,61 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Tristan Pon - PhD Portfolio</title>
-  <link href="styles.css" rel="stylesheet">
+  <title>Tristan Pon</title>
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
-  <main class="container">
+  <div class="layout">
     <aside class="sidebar">
-      <div class="overlay">
-        <div class="top-section">
-          <a href="avatar.jpg" target="_blank">
-            <img src="avatar.jpg" alt="Tristan Pon" class="avatar" />
-          </a>
-          <h1 class="name">Tristan Pon</h1>
-          <div class="icons">
-            <a href="#" title="LinkedIn"><img src="linkedin.png" alt="LinkedIn" class="icon" /></a>
-            <a href="#" title="Email"><img src="email.png" alt="Email" class="icon" /></a>
-          </div>
-        </div>
-        <nav class="nav-menu">
-          <button onclick="showSection('home')">Home</button>
-          <button onclick="showSection('about')">About</button>
-          <button onclick="showSection('projects')">Projects</button>
-          <button onclick="showSection('contact')">Contact</button>
-        </nav>
+      <img src="avatar.jpg" alt="Tristan Pon" class="avatar" />
+      <h1 class="name">Tristan Pon</h1>
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/tristan-pon/" target="_blank"><img src="linkedin.png" alt="LinkedIn" /></a>
+        <a href="mailto:tpschool2854@gmail.com"><img src="email.png" alt="Email" /></a>
       </div>
+      <nav class="nav">
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('contact')">Contact</button>
+      </nav>
     </aside>
-    <section class="content">
-      <div id="home" class="section">
+    <main class="content">
+      <section id="home" class="section visible">
         <h2>Featured Articles</h2>
         <p>Explore a featured selection of my writing work below.</p>
         <div class="card">
           <h3>Green Corrosion Inhibitors for Steel</h3>
-          <p>Tested eco-friendly corrosion inhibitors using EIS and SEM on carbon steel in HCl. Achieved up to 85% efficiency. <a href="#">Read more</a></p>
+          <p>Tested eco-friendly corrosion inhibitors using EIS and SEM on carbon steel in HCl. Achieved up to 85% efficiency.</p>
         </div>
-      </div>
-      <div id="about" class="section hidden">
+      </section>
+      <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I am a corrosion engineer with a background in materials science and electrochemistry. My research
-        focuses on corrosion behavior in harsh environments, especially within marine and oil & gas applications.
-        I am currently pursuing my goal of joining a PhD program to explore advanced corrosion modeling and sustainable materials.</p>
-      </div>
-      <div id="projects" class="section hidden">
+        <p>I am an ambitious mechanical engineering graduate with expertise in corrosion engineering, eager to learn and seize every possible opportunity. My passion for finding unusual ways to optimise solutions and automation naturally led me to mechanical engineering. Following in my father’s footsteps, I’ve always been fascinated by computers, software, and how systems are designed to work smarter, not harder. Mechanical engineering is where I am able to blend my love for technology, programming, a...
+        <p>I was born in South Africa and travelled a long way to Australia to pursue my studies at RMIT in Bachelors of Engineering (Mechanical) (Hons). I studied for 4 years and took part in many extra-curricular activities. One of my major achievements is being a founding member of RMIT Engineers Australia Student Society (REASS) and serving as the student ambassador for Engineers Australia at RMIT. I completed my studies at the end of 2023 with my thesis focused on <em>"Modern Multi-story buildings ...
+        <p>Nowadays, you can find me working with Cathodic Protection Designs as a Corrosion Engineer at Corrosion Control Engineering (a member of the Eptec Group), supporting major pipeline projects across Australia and ensuring homes have their essential utilities.</p>
+      </section>
+      <section id="projects" class="section">
         <h2>Research Projects</h2>
         <div class="card">
           <h3>Eco-friendly Inhibitors for Carbon Steel</h3>
-          <p>Developed and tested novel green inhibitors to reduce corrosion rates in acidic environments.
-          Employed electrochemical impedance spectroscopy (EIS) and surface analysis (SEM/EDS).</p>
+          <p>Developed and tested novel green inhibitors to reduce corrosion rates in acidic environments. Employed electrochemical impedance spectroscopy (EIS) and surface analysis (SEM/EDS).</p>
         </div>
-      </div>
-      <div id="contact" class="section hidden">
+      </section>
+      <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>Email: tristan@email.com</p>
-        <p>GitHub: github.com/tristan-corrosion</p>
-      </div>
-    </section>
-  </main>
+        <p><strong>Email:</strong> <a href="mailto:tpschool2854@gmail.com">tpschool2854@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tristan-pon/" target="_blank">linkedin.com/in/tristan-pon</a></p>
+        <div class="card note">
+          <p>I’m always open to academic collaboration, research projects, or professional conversations. Feel free to connect with me or drop me a message directly.</p>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
